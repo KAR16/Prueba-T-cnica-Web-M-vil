@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Prueba Técnica</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  </head>
+  <body>
+    <form>
+
+      <!-- Título -->
+      <div class="form-group">
+        <label for="title">Título:</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+
+      <!-- Latitud -->
+      <div class="form-group">
+        <label for="lat">Latitud:</label>
+        <input type="text" class="form-control" id="lat">
+      </div>
+
+      <!-- Longitud -->
+      <div class="form-group">
+        <label for="long">Longitud:</label>
+        <input type="text" class="form-control" id="long">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Descripción:</label>
+        <textarea class="form-control" id="description" rows="3"></textarea>
+      </div>
+
+      <input type="button" class="btn btn-primary save" value="Guardar">
+      <!-- <button class="btn btn-primary save">Guardar</button> -->
+    </form>
+
+    <div id="map" align="center"></div>
+  </body>
+
+  <!-- JQuey -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+
+
+</html>
