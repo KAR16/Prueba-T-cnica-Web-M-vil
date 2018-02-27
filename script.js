@@ -29,7 +29,7 @@ function initialize(title, descripcion, latitud, longitud) {
               '<p>Latitud:'+ latitud +'</p>'+
               '<p>Longitud:'+ longitud +'</p>';
 
-  var myLatLng = {lat: latitud, lng: longitud};
+  var myLatLng = {lat: 36.169941, lng: -115.13983};
   var mapOptions = {
     zoom:11,
     center:myLatLng
@@ -40,7 +40,7 @@ function initialize(title, descripcion, latitud, longitud) {
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: title
+    title: 'Marcador 1'
   });
 
 
