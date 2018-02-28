@@ -11,8 +11,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAer8oRflfEYhhPjk1BO3lIEdRBP5WzpgU&callback=initMap"></script>
   </head>
   <body>
     <form>
@@ -26,18 +24,18 @@
       <!-- Latitud -->
       <div class="form-group">
         <label for="lat">Latitud:</label>
-        <input type="text" class="form-control" id="lat">
+        <input type="number" class="form-control" id="lat">
       </div>
 
       <!-- Longitud -->
       <div class="form-group">
         <label for="long">Longitud:</label>
-        <input type="text" class="form-control" id="long">
+        <input type="number" class="form-control" id="long">
       </div>
 
       <div class="form-group">
         <label for="description">Descripción:</label>
-        <textarea class="form-control" id="description" rows="3"></textarea>
+        <textarea class="form-control" id="description" rows="2"></textarea>
       </div>
 
       <input type="button" class="btn btn-primary save" value="Guardar">
@@ -47,6 +45,9 @@
     <div id="map" align="center"></div>
   </body>
 
+  <!-- Google Maps API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAer8oRflfEYhhPjk1BO3lIEdRBP5WzpgU&callback=initMap"></script>
+
   <!-- JQuey -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -54,7 +55,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- JS -->
+  <script src="localization.js"></script>
   <script src="script.js"></script>
+
 
 
 
